@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#143e3b">
+  <meta name="description" content="Интерактивный лонгрид об электронной коммерции, криптовалютах и доверии к данным в цифровой медицине. Путь лабораторного заказа, исследования и практические кейсы.">
+  <title>Цифровая медицина и Web3 — от записи к доверию</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+<a class="skip" href="#intro">Перейти к материалу</a>
+<div class="reading-progress" aria-hidden="true"><span id="progress"></span></div>
+<header class="topbar">
+  <a class="brand" href="#top" aria-label="Медицина и Web3 — в начало"><span class="brand-symbol">✳</span> МЕДИЦИНА <span class="brand-divider">/</span> WEB3</a>
+  <div class="header-right"><span class="edition">Интерактивный лонгрид · 2026</span><button id="menu-toggle" aria-expanded="false" aria-controls="contents">Оглавление <span aria-hidden="true">☰</span></button></div>
+</header>
+<main id="top">
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-copy">
+    <p class="eyebrow"><span class="small-dot"></span> Интернет-технологии · Лабораторная работа № 3</p>
+    <h1 id="hero-title">Цифровая<br>медицина.<br><em>Новый уровень<br>доверия?</em></h1>
+    <p class="hero-lead">Электронная коммерция и криптовалюты в здравоохранении: что меняет Web3 — и какие задачи всё ещё решают люди.</p>
+    <div class="hero-actions"><a class="button button-dark" href="#intro">Начать чтение <span aria-hidden="true">↘</span></a><span id="read-time">15 минут чтения</span></div>
+  </div>
+  <div class="hero-art">
+    <img class="hero-illustration" src="hero-network.svg" width="640" height="680" alt="Иллюстрация: пациент, клиника и лаборатория обмениваются статусами заказа, а медицинские данные остаются в отдельном защищенном хранилище.">
+    <div class="hero-art-caption"><span>01 / СВЯЗАННЫЕ СИСТЕМЫ</span><span>Данные ≠ деньги</span></div>
+  </div>
+  <div class="byline"><span>Учебный проект <b>·</b> Интернет-технологии</span><span>На основе материалов реферата · 2026</span></div>
+</section>
+
+<div class="article-layout">
+<aside id="contents" class="contents" aria-label="Оглавление">
+  <p class="eyebrow">В этом материале</p>
+  <nav aria-label="Разделы лонгрида"><ol>
+    <li><a href="#intro"><span>01</span> Медицина как сервис</a></li>
+    <li><a href="#web3"><span>02</span> Что добавляет Web3</a></li>
+    <li><a href="#journey"><span>03</span> Путь одного заказа</a></li>
+    <li><a href="#payments"><span>04</span> Деньги в цифре</a></li>
+    <li><a href="#data"><span>05</span> Кто видит данные</a></li>
+    <li><a href="#cases"><span>06</span> Кейсы и доказательства</a></li>
+    <li><a href="#conclusions"><span>07</span> Что в итоге</a></li>
+    <li><a href="#sources"><span>08</span> Источники</a></li>
+  </ol></nav>
+  <div class="contents-bottom"><span id="read-percent">0% прочитано</span><a href="#top">Наверх ↑</a></div>
+</aside>
+
+<article>
+<section id="intro" class="chapter">
+  <div class="chapter-label">01 <span>Медицина как сервис</span></div>
+  <h2>За кнопкой «Записаться» —<br>целая цепочка доверия</h2>
+  <p class="lead">Пациент выбирает исследование, оплачивает заказ и ждёт результат. Для него это один сервис. Для инфраструктуры — взаимодействие клиники, лаборатории, платёжной системы и медицинского хранилища.</p>
+  <p>Цифровизация начинается там, где меняется сам процесс: запись связана с расписанием, назначением, оплатой и выдачей результата. Электронная форма сама по себе мало помогает, если сотрудник затем вручную переносит её в другую систему. Хороший сервис делает понятным каждый переход: кто принял заказ, что оплачено и когда можно получить документ.</p>
+  <p>Здесь электронная коммерция встречается с цифровой медициной. Каталог услуг, договор, расчёт, исполнение и возврат образуют коммерческую часть. Назначение, образец, исследование и интерпретация относятся к медицинской. Эти процессы связаны, но доступ к истории платежей не должен автоматически открывать доступ к результатам анализов.</p>
+  <figure class="photo-figure"><img src="laboratory.jpg" width="1400" height="2100" loading="lazy" alt="Сотрудник лаборатории Национального института рака США работает с микроскопом."><figcaption><span>01 / За цифровым статусом стоит реальная лабораторная работа.</span> Фото: <a href="https://unsplash.com/photos/pzhmgzgL1Sk" target="_blank" rel="noopener noreferrer">National Cancer Institute / Unsplash ↗</a></figcaption></figure>
+  <p>Главная трудность — согласовать смысл сообщений. Если клиника понимает под «выполнено» взятие материала, а лаборатория — подписанный результат, единый формат обмена не устранит расхождение. Участникам нужны общие определения состояний, ответственные за переходы и процедура исправления ошибок.</p>
+  <blockquote>Ценность технологии определяется тем, помогает ли она получить корректную информацию вовремя и восстановить ход событий при споре.<cite>Критерий оценки в исходном реферате</cite></blockquote>
+  <p>В рекомендациях ВОЗ цифровые вмешательства оцениваются через пользу, возможный вред, приемлемость, осуществимость, ресурсы и равенство доступа. Это полезная рамка и для учебного проекта: ускорение обмена не оправдывает ухудшение доступности помощи. <a class="ref" href="#s-who">[1]</a></p>
+</section>
+
+<section id="web3" class="chapter">
+  <div class="chapter-label">02 <span>Что добавляет Web3</span></div>
+  <h2>Не один инструмент,<br>а несколько разных идей</h2>
+  <p>Под Web 3.0 часто объединяют два подхода. Семантический веб помогает программам понимать связи между понятиями. Блокчейн-ориентированный Web3 предлагает распределённые приложения, цифровые активы и совместно поддерживаемые реестры. Это разные задачи: наличие ИИ, VR или датчика само по себе не делает сервис децентрализованным.</p>
+  <div class="idea-pair"><div><span class="mini-label">СЕМАНТИЧЕСКИЙ ВЕБ</span><h3>Согласовать значение</h3><p>Какой именно показатель измерен? В каких единицах? К какому назначению относится результат?</p><a href="https://www.w3.org/OWL/" target="_blank" rel="noopener noreferrer">Стандарты OWL / W3C ↗</a></div><div><span class="mini-label">РАСПРЕДЕЛЁННЫЙ РЕЕСТР</span><h3>Согласовать историю</h3><p>Кто подтвердил событие? В какой последовательности? Совпадают ли записи у независимых участников?</p><a class="ref" href="#s-nist">Обзор NIST ↗</a></div></div>
+  <p>Блокчейн связывает записи криптографически и использует правила согласования состояния. Он помогает обнаруживать изменения истории, но не проверяет реальность медицинского события. Ошибочное сообщение лаборатории может быть столь же устойчиво записано, как правильное. Смарт-контракт выполняет правило; ответственность за исходные сведения остаётся у их поставщика. <a class="ref" href="#s-nist">[2]</a></p>
+  <p>Сведения из внешнего мира поступают через оракулы. Для нашего сценария оракулом мог бы быть сервис, передающий подписанное подтверждение выполнения заказа. Так доверие не исчезает, а получает конкретную границу: кто имеет право сообщить событие и как его оспорить. <a class="ref" href="#s-oracles">[3]</a></p>
+  <div class="video-block"><div class="video-heading"><span class="mini-label">ВИДЕОРАЗБОР · 24 СЕКУНДЫ</span><h3>Что именно проходит через систему?</h3><p>Авторская анимация показывает три разных объекта: заказ, подтверждение оплаты и медицинский результат. Видео хранится на самом сайте.</p></div>
+    <video controls preload="metadata" playsinline poster="video-poster.jpg" width="960" height="540" aria-label="Авторская анимация пути медицинского заказа"><source src="order-explainer.mp4" type="video/mp4"><track kind="captions" src="explainer.vtt" srclang="ru" label="Русский" default>Ваш браузер не поддерживает видео. Ниже доступно текстовое пояснение.</video>
+    <details><summary>Текстовое пояснение к видео</summary><p>Пациент выбирает исследование. Сервис создаёт заказ. Платёжный провайдер сообщает только статус оплаты. Лаборатория выполняет исследование и сохраняет результат в защищённой системе. В общий журнал попадает подтверждение события, а не диагноз. При ошибке требуется отдельная сверка.</p></details>
+    <p class="media-note">Для углубления: <a href="https://www.3blue1brown.com/lessons/bitcoin/" target="_blank" rel="noopener noreferrer">видеоурок 3Blue1Brown об устройстве Bitcoin ↗</a> (английский; внешний ресурс).</p>
+  </div>
+</section>
+
+<section id="journey" class="chapter">
+  <div class="chapter-label">03 <span>Путь одного заказа</span></div>
+  <h2>От выбора анализа<br>до защищённого результата</h2>
+  <p class="lead">Исследуйте учебный сценарий. Выберите этап — схема покажет, кто действует, какие данные передаются и что фиксируется в журнале.</p>
+  <div class="journey-widget">
+    <div class="widget-heading"><span class="mini-label">ИНТЕРАКТИВНАЯ МОДЕЛЬ</span><span class="model-badge">Без реальных данных</span></div>
+    <div class="step-tabs" role="tablist" aria-label="Этапы лабораторного заказа"><button type="button" role="tab" id="step-tab-0" aria-selected="true" aria-controls="step-panel" data-step="0">01 <span>Выбор</span></button><button type="button" role="tab" id="step-tab-1" aria-selected="false" aria-controls="step-panel" data-step="1" tabindex="-1">02 <span>Оплата</span></button><button type="button" role="tab" id="step-tab-2" aria-selected="false" aria-controls="step-panel" data-step="2" tabindex="-1">03 <span>Исследование</span></button><button type="button" role="tab" id="step-tab-3" aria-selected="false" aria-controls="step-panel" data-step="3" tabindex="-1">04 <span>Результат</span></button></div>
+    <div class="actor-flow" aria-hidden="true"><div data-actor="patient"><span>◎</span>Пациент</div><i>→</i><div data-actor="clinic"><span>✚</span>Клиника</div><i>→</i><div data-actor="lab"><span>⌁</span>Лаборатория</div><i>→</i><div data-actor="storage"><span>▤</span>Хранилище</div></div>
+    <div id="step-panel" role="tabpanel" aria-labelledby="step-tab-0" tabindex="0" aria-live="polite"><p class="step-kicker" id="step-kicker">ЭТАП 01 / ПАЦИЕНТ → КЛИНИКА</p><h3 id="step-title">Сначала — понятные условия</h3><p id="step-description">Пациент выбирает услугу и исполнителя, видит цену, состав исследования и порядок отмены. Сервис создаёт заказ с устойчивым идентификатором.</p><div class="record-line"><span>В журнале</span><p id="step-record">Заказ создан · услуга согласована · время события</p></div><div class="record-line private"><span>Отдельно</span><p id="step-private">Персональные сведения — только в защищённой системе клиники.</p></div></div>
+    <div class="scenario-actions"><button id="exception-toggle" class="text-button" aria-expanded="false" aria-controls="exception-panel">Что, если возникла ошибка? <span>↗</span></button><button id="next-step" class="button button-dark">Следующий этап →</button></div>
+    <div id="exception-panel" class="exception" hidden><h4 id="exception-title">Услуга недоступна</h4><p id="exception-text">Заказ не подтверждается до согласования исполнителя. Пациенту предлагают другой вариант; система не показывает ложный статус успеха.</p></div>
+  </div>
+  <p>Повторная доставка одного сообщения не должна создавать повторную оплату или второй возврат. В предлагаемой архитектуре у каждого события есть идентификатор. Получатель проверяет, обработано ли оно, и сопоставляет переход с текущим состоянием заказа. При разрыве связи событие ожидает отправки, а интерфейс честно показывает промежуточный статус.</p>
+  <p>Особенно важны исключения: непригодный образец, отказ исполнителя после оплаты, исправленный результат. Они требуют отдельного решения, а не механического перехода в «выполнено». Запись в журнале помогает разбирать ситуацию, но не закрывает претензию и не оценивает клиническую правильность.</p>
+  <div class="audio-block"><span class="audio-symbol" aria-hidden="true">≋</span><div><h3>Послушать последовательность</h3><p>Четыре возрастающих сигнала соответствуют выбору, оплате, исследованию и результату. Звуковая схема помогает запомнить порядок этапов; это авторская иллюстрация, не медицинский сигнал.</p><audio controls preload="metadata" src="order-sequence.wav" aria-label="Четыре звуковых сигнала этапов заказа"></audio><small>8 секунд · синтезированные звуки · запуск вручную</small></div></div>
+</section>
+
+<section id="payments" class="chapter">
+  <div class="chapter-label">04 <span>Деньги в цифре</span></div>
+  <h2>Цифровой платёж<br>не всегда криптовалюта</h2>
+  <p>Онлайн-оплата описывает канал взаимодействия, а не один вид денег. Криптовалюта учитывается по правилам сети. Стейблкоин стремится поддерживать привязку к ориентиру, но несёт риски механизма обеспечения. Цифровой рубль выпускает Банк России; это форма национальной валюты с другой моделью, чем у частного криптоактива. <a class="ref" href="#s-stable">[4]</a> <a class="ref" href="#s-cbr">[5]</a></p>
+  <div class="payment-widget"><div class="payment-tabs" role="tablist" aria-label="Сравнение денежных инструментов"><button type="button" role="tab" id="pay-tab-0" aria-selected="true" aria-controls="pay-panel" data-pay="0">Криптовалюта</button><button type="button" role="tab" id="pay-tab-1" aria-selected="false" aria-controls="pay-panel" data-pay="1" tabindex="-1">Стейблкоин</button><button type="button" role="tab" id="pay-tab-2" aria-selected="false" aria-controls="pay-panel" data-pay="2" tabindex="-1">Цифровой рубль</button></div><div id="pay-panel" role="tabpanel" aria-labelledby="pay-tab-0" tabindex="0" aria-live="polite"><span class="payment-sign" id="pay-sign" aria-hidden="true">₿</span><h3 id="pay-title">Актив по правилам сети</h3><p id="pay-description">Передача и учёт определяются протоколом. Стоимость относительно рубля может меняться; к сумме платежа добавляются комиссии.</p><dl><div><dt>На что смотреть</dt><dd id="pay-risk">Курс, комиссии, сохранность ключа и правила завершения операции.</dd></div><div><dt>Для медицинского сервиса</dt><dd id="pay-health">Заранее определить цену услуги, момент исполнения обязательства и процедуру возврата.</dd></div></dl></div></div>
+  <div class="rate-demo"><div><span class="mini-label">ПОПРОБУЙТЕ САМИ</span><h3>Цена услуги фиксирована.<br>А курс актива?</h3><p>Условная услуга стоит 3 000 ₽. В момент оплаты за неё передан 1 условный токен. Измените курс: сколько теперь стоит тот же токен?</p></div><div class="rate-control"><label for="rate-range">Изменение курса: <output id="rate-percent" for="rate-range">0%</output></label><input id="rate-range" type="range" min="-40" max="40" step="5" value="0"><div class="range-labels"><span>−40%</span><span>+40%</span></div><p class="rate-value" id="rate-value" aria-live="polite">3 000 ₽</p><p id="rate-explanation">Стоимость токена совпадает с исходной ценой услуги.</p></div><small>Условный расчёт без комиссий. Это не рыночный прогноз и не модель работы цифрового рубля. Условия возврата определяются договором.</small></div>
+  <p>Договор и перевод — разные объекты. Для сервиса необходимо определить, когда обязательство считается исполненным и как разбирать возврат. В учебной модели медицинский результат не ставится в зависимость от демонстрационного курса. Выбор платёжной инфраструктуры требует отдельной правовой и организационной оценки.</p>
+</section>
+
+<section id="data" class="chapter">
+  <div class="chapter-label">05 <span>Кто видит данные</span></div>
+  <h2>Общий статус.<br>Разный уровень доступа.</h2>
+  <p class="lead">Совместимость помогает доставить информацию. Контроль доступа определяет, кому её можно показать.</p>
+  <p>HL7 FHIR задаёт модели ресурсов и способы обмена медицинскими сведениями. При этом FHIR сам по себе не является протоколом безопасности: защищённый канал, аутентификация, полномочия и аудит проектируются дополнительно. Для реального обмена важен и смысл: код исследования, единица измерения, время получения и версия результата. <a class="ref" href="#s-fhir">[6]</a></p>
+  <figure class="architecture"><a href="data-boundary.svg" target="_blank" rel="noopener noreferrer" aria-label="Открыть схему границ данных в полном размере"><img src="data-boundary.svg" width="1000" height="520" loading="lazy" alt="Схема границ данных: в журнал передаются идентификатор заказа, статус, время и подпись; клинический результат и персональные сведения остаются в защищённом контуре."></a><figcaption>02 / Авторская схема по сценарию из реферата. Это проектная модель, а не развёрнутая медицинская система. Нажмите для увеличения.</figcaption></figure>
+  <p>В модели DID децентрализованный идентификатор связывается со средствами проверки. Но идентификатор ещё не подтверждает профессию врача. Модель проверяемых удостоверений W3C отдельно выделяет издателя, держателя и проверяющего: важно, кто подписал утверждение, доверяет ли ему получатель и действительно ли удостоверение. Ни одна из этих записей сама по себе не предоставляет доступ к медицинской карте. <a class="ref" href="#s-did">[7]</a> <a class="ref" href="#s-vc">[8]</a></p>
+  <div class="role-explorer"><div class="widget-heading"><h3>Посмотрите глазами участника</h3><span class="mini-label">УЧЕБНАЯ МАТРИЦА ДОСТУПА</span></div><div class="role-buttons" role="group" aria-label="Роль участника"><button data-role="doctor" aria-pressed="true">Врач</button><button data-role="admin" aria-pressed="false">Администратор</button><button data-role="payment" aria-pressed="false">Платёжный сервис</button></div><ul id="role-data" class="access-list" aria-live="polite"><li class="allowed">✓ Назначение и медицинский результат</li><li class="allowed">✓ Статус исполнения исследования</li><li class="restricted">— Полные платёжные реквизиты не нужны для лечения</li></ul><p>В реальной системе права зависят от роли, конкретной цели, согласованных оснований и срока доступа. Матрица иллюстрирует принцип минимизации данных.</p></div>
+  <p>Диагнозы, паспортные сведения и содержание результата не помещаются в открытый реестр. Даже хеш требует оценки риска связывания с человеком. Восстановление доступа, отзыв полномочий сотрудника и действия при отказе внешнего сервиса должны быть предусмотрены до запуска пилота.</p>
+</section>
+
+<section id="cases" class="chapter">
+  <div class="chapter-label">06 <span>Кейсы и доказательства</span></div>
+  <h2>Что уже исследовали —<br>и что это доказывает</h2>
+  <p>Статья об архитектуре, прототип и промышленное внедрение дают разные уровни доказательности. Два примера из реферата показывают способы организации обмена. Они не подтверждают универсальное преимущество блокчейна для каждой клиники.</p>
+  <div class="case-study"><div class="case-meta"><span>КЕЙС 01</span><span class="status-label">Исследовательский прототип · 2018</span></div><h3>FHIRChain: обмен клиническими данными</h3><p>Zhang и соавторы связали FHIR с блокчейн-архитектурой и продемонстрировали приложение для совместного принятия решений в удалённой онкологической помощи. Пример важен разделением клинического содержания и механизмов предоставления доступа. Массовое внедрение или измеренный эффект для всех клиник из наличия прототипа не следуют. <a class="ref" href="#s-fhirchain">[9]</a></p><figure><a href="fhirchain.png" target="_blank" rel="noopener noreferrer" aria-label="Открыть интерфейс FHIRChain в полном размере"><img src="fhirchain.png" width="2186" height="1404" loading="lazy" alt="Интерфейс прототипа FHIRChain: журнал действий и список клинических ресурсов."></a><figcaption>03 / Zhang P. и др., FHIRChain, 2018, рис. 7. Изображение из исходного реферата. Нажмите для увеличения.</figcaption></figure><a class="source-link" href="https://arxiv.org/abs/1807.03227" target="_blank" rel="noopener noreferrer">Читать исследование на arXiv <span>↗</span></a></div>
+  <div class="case-study"><div class="case-meta"><span>КЕЙС 02</span><span class="status-label">Материал разработчика · 2019</span></div><h3>Exonum: модель медицинской экосистемы</h3><p>В статье Bitfury на Хабре описана схема обмена медицинскими данными с использованием Exonum. Авторы также сообщают об отдельных тестированиях компонентов. Для нашего сценария важен вопрос границ между закрытой информацией и обменом. Это первичный материал разработчика, а не независимое сравнительное исследование эффективности. <a class="ref" href="#s-exonum">[10]</a></p><figure><a href="exonum.jpg" target="_blank" rel="noopener noreferrer" aria-label="Открыть схему Exonum в полном размере"><img src="exonum.jpg" width="1560" height="783" loading="lazy" alt="Схема медицинской экосистемы Exonum из статьи Bitfury на Хабре."></a><figcaption>04 / BitfuryRussia, «Блокчейн и медицинские данные: как это работает», Хабр, 03.03.2019. Изображение из реферата.</figcaption></figure><a class="source-link" href="https://habr.com/ru/companies/bitfury/articles/442450/" target="_blank" rel="noopener noreferrer">Разобрать кейс на Хабре <span>↗</span></a></div>
+  <div class="research-note"><span class="research-number">58</span><div><span class="mini-label">ПУБЛИКАЦИЙ В ОБЗОРЕ 2021 ГОДА</span><h3>Перспективность ещё нужно проверять</h3><p>Систематический обзор Fang и соавторов включил 58 публикаций о персональных медицинских записях на блокчейне. Авторы указывают на необходимость дальнейшей проверки удобства, безопасности и эффективности. Это исторический срез исследований, а не текущая статистика внедрения. <a class="ref" href="#s-review">[11]</a></p><a href="https://www.jmir.org/2021/4/e25094/" target="_blank" rel="noopener noreferrer">Открыть систематический обзор ↗</a></div></div>
+  <p>Для собственного пилота из реферата предлагается одна клиника, одна лаборатория и ограниченный набор услуг. Измеряются время до получения результата, доля ручных сверок, ошибки сопоставления и затраты сопровождения. Показатели сравниваются с действующим процессом при сопоставимой нагрузке. Это план проверки, а не выдуманные результаты внедрения.</p>
+</section>
+
+<section id="conclusions" class="chapter conclusion">
+  <div class="chapter-label">07 <span>Что в итоге</span></div>
+  <h2>Сначала — понятный процесс.<br>Затем — технология.</h2>
+  <p class="lead">Web3 может помочь независимым организациям согласовывать события. Пользу нужно подтверждать на конкретной задаче и сравнивать с более простой архитектурой.</p>
+  <ol class="takeaways"><li><span>01</span><div><h3>Совместимость — основа</h3><p>Единый смысл статусов и данных, защищённый обмен и аудит важнее эффектного технологического названия.</p></div></li><li><span>02</span><div><h3>Оплата и медицина связаны, но разделены</h3><p>Коммерческий сервис должен поддерживать отмену, возврат и спор. Клиническое содержание хранится в защищённом контуре.</p></div></li><li><span>03</span><div><h3>Реестр не заменяет ответственность</h3><p>Подпись подтверждает происхождение сообщения. Ошибку ввода, качество исследования и права участников проверяют отдельно.</p></div></li><li><span>04</span><div><h3>Пилот должен давать измеримый эффект</h3><p>Если база данных с аудитом решает задачу проще, для блокчейна пока нет достаточного обоснования.</p></div></li></ol>
+  <div class="knowledge"><span class="mini-label">ПРОВЕРЬТЕ ПОНИМАНИЕ</span><h3>Что безопаснее передать в общий журнал учебного заказа?</h3><div class="quiz-answers" role="group" aria-label="Ответы на вопрос"><button data-answer="wrong">Диагноз и ФИО пациента</button><button data-answer="correct">Минимальный статус события и подпись</button><button data-answer="wrong">Полную копию медицинской карты</button></div><p id="quiz-feedback" aria-live="polite">Выберите ответ — появится пояснение.</p></div>
+</section>
+
+<section id="sources" class="chapter sources">
+  <div class="chapter-label">08 <span>Источники и медиаматериалы</span></div>
+  <h2>Продолжить исследование</h2>
+  <p>Основа лонгрида — реферат «Электронная коммерция и криптовалюты в цифровой медицине». Материал адаптирован для веба: добавлены учебные интерактивные модели и авторская анимация. Исторические кейсы датированы; внешние страницы проверены 8 ноября 2026 года.</p>
+  <div class="source-filters" role="group" aria-label="Фильтр источников"><button data-filter="all" aria-pressed="true">Все</button><button data-filter="research" aria-pressed="false">Исследования</button><button data-filter="standards" aria-pressed="false">Стандарты</button><button data-filter="cases" aria-pressed="false">Статьи и кейсы</button></div>
+  <ol class="source-list">
+    <li id="s-who" data-category="research"><span class="source-index">01</span><div><a href="https://www.who.int/publications/i/item/9789241550505" target="_blank" rel="noopener noreferrer">WHO guideline: recommendations on digital interventions for health system strengthening ↗</a><p>World Health Organization. Geneva, 2019. ISBN 978-92-4-155050-5. Рамка оценки пользы и ограничений цифровых вмешательств.</p></div></li>
+    <li id="s-nist" data-category="standards"><span class="source-index">02</span><div><a href="https://csrc.nist.gov/pubs/ir/8202/final" target="_blank" rel="noopener noreferrer">Yaga D., Mell P., Roby N., Scarfone K. Blockchain Technology Overview ↗</a><p>NISTIR 8202. 2018. DOI: 10.6028/NIST.IR.8202. Технический обзор распределённых реестров.</p></div></li>
+    <li id="s-oracles" data-category="standards"><span class="source-index">03</span><div><a href="https://ethereum.org/developers/docs/oracles/" target="_blank" rel="noopener noreferrer">Oracles / ethereum.org ↗</a><p>Документация об обмене между смарт-контрактами и внешними источниками данных.</p></div></li>
+    <li id="s-stable" data-category="standards"><span class="source-index">04</span><div><a href="https://ethereum.org/stablecoins/" target="_blank" rel="noopener noreferrer">Stablecoins / ethereum.org ↗</a><p>Механизмы привязки и ограничения стейблкоинов.</p></div></li>
+    <li id="s-cbr" data-category="cases"><span class="source-index">05</span><div><a href="https://www.cbr.ru/PSystem/dr/" target="_blank" rel="noopener noreferrer">Цифровой рубль / Банк России ↗</a><p>Официальное описание формы национальной валюты и её платформы.</p></div></li>
+    <li id="s-fhir" data-category="standards"><span class="source-index">06</span><div><a href="https://hl7.org/fhir/security.html" target="_blank" rel="noopener noreferrer">FHIR Security / HL7 International ↗</a><p>FHIR Release 5, version 5.0.0. 2023. Обмен данными, защита каналов, права и аудит.</p></div></li>
+    <li id="s-did" data-category="standards"><span class="source-index">07</span><div><a href="https://www.w3.org/TR/did-core/" target="_blank" rel="noopener noreferrer">Decentralized Identifiers (DIDs) v1.0 / W3C ↗</a><p>W3C Recommendation, 19.07.2022. Архитектура децентрализованных идентификаторов.</p></div></li>
+    <li id="s-vc" data-category="standards"><span class="source-index">08</span><div><a href="https://www.w3.org/TR/vc-data-model-2.0/" target="_blank" rel="noopener noreferrer">Verifiable Credentials Data Model v2.0 / W3C ↗</a><p>W3C Recommendation, 15.05.2025. Издатель, держатель и проверяющая сторона удостоверения.</p></div></li>
+    <li id="s-fhirchain" data-category="research cases"><span class="source-index">09</span><div><a href="https://arxiv.org/abs/1807.03227" target="_blank" rel="noopener noreferrer">Zhang P., White J., Schmidt D. C. et al. FHIRChain ↗</a><p>Applying Blockchain to Securely and Scalably Share Clinical Data. 2018. arXiv:1807.03227. Исследовательский прототип.</p></div></li>
+    <li id="s-exonum" data-category="cases"><span class="source-index">10</span><div><a href="https://habr.com/ru/companies/bitfury/articles/442450/" target="_blank" rel="noopener noreferrer">BitfuryRussia. Блокчейн и медицинские данные: как это работает ↗</a><p>Хабр, 03.03.2019. Экспертная статья разработчика о медицинской экосистеме Exonum.</p></div></li>
+    <li id="s-review" data-category="research"><span class="source-index">11</span><div><a href="https://www.jmir.org/2021/4/e25094/" target="_blank" rel="noopener noreferrer">Fang H. S. A., Tan T. H., Tan Y. F. C., Tan C. J. M. Blockchain Personal Health Records: Systematic Review ↗</a><p>Journal of Medical Internet Research. 2021. Vol. 23, no. 4. e25094. DOI: 10.2196/25094.</p></div></li>
+    <li data-category="cases"><span class="source-index">12</span><div><a href="https://www.w3.org/OWL/" target="_blank" rel="noopener noreferrer">OWL: Semantic Web Standards / W3C ↗</a><p>Стандарты описания понятий и отношений семантического веба.</p></div></li>
+    <li data-category="cases"><span class="source-index">13</span><div><a href="https://www.3blue1brown.com/lessons/bitcoin/" target="_blank" rel="noopener noreferrer">3Blue1Brown. But how does bitcoin actually work? ↗</a><p>Видеоурок автора, 2017. Дополнительный разбор цифровых подписей, хешей и согласования реестра.</p></div></li>
+  </ol>
+  <details class="media-credits"><summary>Авторство иллюстраций, видео и звука</summary><p>Фотография лаборатории: National Cancer Institute, опубликована на Unsplash 11.03.2020, <a href="https://unsplash.com/photos/pzhmgzgL1Sk" target="_blank" rel="noopener noreferrer">страница оригинала</a>, <a href="https://unsplash.com/license" target="_blank" rel="noopener noreferrer">лицензия Unsplash</a>. Интерфейс FHIRChain — Zhang и соавт., 2018, рис. 7; схема Exonum — BitfuryRussia, Хабр, 2019. Обе иллюстрации включены в учебный разбор с указанием источников. Обложка, схема разделения данных, видео, субтитры и звуковая последовательность созданы для этого лонгрида.</p></details>
+  <noscript><p class="notice">JavaScript отключён. Текст, оглавление, ссылки, видео и аудио доступны. Для переключения учебных моделей включите JavaScript.</p></noscript>
+</section>
+</article>
+</div>
+</main>
+<footer><a class="brand" href="#top"><span class="brand-symbol">✳</span> МЕДИЦИНА / WEB3</a><p>Учебный проект по интернет-технологиям<br>Электронная коммерция и криптовалюты в цифровой медицине · 2026</p><a href="#top">Вернуться к началу ↑</a></footer>
+</body>
+</html>
